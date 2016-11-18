@@ -1,0 +1,68 @@
+/*
+ * primary: #00aeef
+ * secondary: #20bcb8
+ *
+ * black: #404041
+ */
+
+/* Resets */
+p,
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: #404041; /* primary copy color */
+}
+
+a {
+  color: #00aeef;
+  text-decoration: none;
+}
+
+/* Main table wrapper */
+
+.wrapper-table {
+  width: 100%;
+  outline: 1px dashed red;
+}
+
+.main-table {
+  width: 800px;
+  outline: 1px dashed blue;
+}
+
+/* Header section */
+.header-row {
+  color: #ffffff;
+  background: #404041;
+}
+
+.horizontal-header-gutter {
+  height: 5px;
+  background: #404041;
+}
+
+.vertical-header-gutter {
+  width: 70px;
+}
+
+.header-contact-table {
+  float: left;
+}
+.header-logo-table {
+  float: right;
+}
+
+/* Media Queries for Mobile */
+@media only screen and (max-device-width: 480px) {
+  .inner-cell {
+    float: left !important;
+    width: 100% !important;
+  }
+}

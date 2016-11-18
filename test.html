@@ -1,0 +1,42 @@
+DevelopmentResponsive Email
+Responsive Column Layouts
+It can be difficult to read a multi-column email on a small screen; having to scroll horizontally is kind of a pain. Reading on small displays tends to work better if it’s done in a linear fashion, from top-to-bottom. Using media queries we can switch a multi-column layout to a single-column one, making it easier to read an email. There are two methods that will be covered here, each with its pros and cons.
+
+Method 1 - Block-level <td> Elements
+
+The first method uses the same column structure covered in the HTML section’s Column Layouts page. Here’s that code:
+
+<table border="0" cellpadding="0" cellspacing="0" width="600" id="templateColumns">
+    <tr>
+        <td align="center" valign="top" width="50%" class="templateColumnContainer">
+            <table border="0" cellpadding="10" cellspacing="0" width="100%">
+                <tr>
+                    <td class="leftColumnContent">
+                        <img src="http://placekitten.com/g/480/300" width="280" style="max-width:280px;" class="columnImage" />
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="top" class="leftColumnContent">
+                        <h1>Left Column</h1>
+                        Lorem ipsum dolor sit amet.
+                    </td>
+                </tr>
+            </table>
+        </td>
+        <td align="center" valign="top" width="50%" class="templateColumnContainer">
+            <table border="0" cellpadding="10" cellspacing="0" width="100%">
+                <tr>
+                    <td class="rightColumnContent">
+                        <img src="http://placekitten.com/g/480/300" width="280" style="max-width:280px;" class="columnImage" />
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="top" class="rightColumnContent">
+                        <h1>Right Column</h1>
+                        Lorem ipsum dolor sit amet.
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
