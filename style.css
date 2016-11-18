@@ -18,11 +18,17 @@ h5 {
 
 body {
   color: #404041; /* primary copy color */
+  font-family: Helvetica;
+  font-weight: 300;
 }
 
 a {
   color: #00aeef;
   text-decoration: none;
+}
+
+.table {
+  width: 50%;
 }
 
 /* Main table wrapper */
@@ -56,13 +62,11 @@ a {
 .header-contact-table {
   float: left;
   text-align: left;
-  width: 50%;
   height: 65px;
 }
 .header-logo-table {
   float: right;
   text-align: right;
-  width: 50%;
   height: 65px;
 }
 
@@ -102,6 +106,18 @@ a {
 .headshot-message-gutter {
   width: 40px;
 }
+/* main content section */
+.main-content-horizontal-gutter {
+  height: 50px;
+}
+
+.main-content-vertical-gutter {
+  width: 60px;
+}
+
+.main-content-table-left {
+  float: left;
+}
 
 /* Footer section */
 
@@ -129,8 +145,11 @@ a {
 
 /* Media Queries for Mobile */
 @media only screen and (max-device-width: 480px) {
-  .headshot-wrapper-row *-table {
+  .table {
+    display: block;
     width: 100%;
-    clear: both;
+  }
+  *-gutter {
+    display: none;
   }
 }
