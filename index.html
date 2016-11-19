@@ -218,9 +218,14 @@
     body {
       font-family: Helvetica, Arial, sans-serif !important;
     }
+
     h1 {
       margin: 0 !important;
       padding: 0 !important;
+    }
+
+    p a {
+      color: #00afec !important;
     }
 
     .headshot-message {
@@ -239,13 +244,24 @@
         height: auto !important;
       }
 
+      .content-left,
+      .content-right {
+        width: 100% !important;
+      }
+
+      .header .content-left,
+      .header .content-right {
+        width: 47% !important;
+      }
+
       .footer-content-wrapper {
-        padding: 0 20px !important;
+        width: 100% !important;
+        padding: 30px !important;
       }
 
       .footer-logo-wrapper {
-        text-align: center;
-        padding: 20px 0;
+        text-align: center !important;
+        padding-bottom: 20px !important;
       }
     }
   </style>
@@ -265,7 +281,7 @@
               <!-- Content table -->
               <table cellpadding="0" cellspacing="0" border="0" width="100%" class="content-table">
                 <tr>
-                  <td style="padding:0 25px; color: #ffffff" cellpadding="0" cellspacing="0" border="0">
+                  <td class="header-content-wrapper" style="padding:0 25px; color: #ffffff" cellpadding="0" cellspacing="0" border="0">
                     <table align="left" cellpadding="0" cellspacing="0" border="0" class="content-left" width="47%">
                       <tr>
                         <td style="font-size: 12px; font-weight: 100; line-height: 14px" height="65">
@@ -277,8 +293,8 @@
                     </table>
                     <table align="right" cellpadding="0" cellspacing="0" border="0" class="content-right" width="47%">
                       <tr>
-                        <td style="text-align: right" height="65">
-                          <img src="/images/logo.png" alt="logo" width="133" style="font-size: 0; line-height: 0; text-align: right">
+                        <td class="header-logo-wrapper" style="text-align: right" height="65">
+                          <img src="/images/logo.png" alt="logo" width="133" height="45" style="font-size: 0; line-height: 0; text-align: right">
                         </td>
                       </tr>
                     </table>
@@ -295,7 +311,7 @@
 
   <!-- Promo module -->
   <!-- Container Table -->
-  <table cellpadding="0" cellspacing="0" border="0" width="100%" style="table-layout: fiex" class="container-table">
+  <table cellpadding="0" cellspacing="0" border="0" width="100%" style="table-layout: fiex" class="profile container-table">
     <tr>
       <td>
         <!-- Wrapper table -->
@@ -308,14 +324,14 @@
                   <td>
                     <table align="left" cellpadding="0" cellspacing="0" border="0" class="content-left">
                       <tr>
-                        <td height="300" style="font-size: 0;line-height: 0">
+                        <td class="headshot-wrapper" height="300" style="font-size: 0;line-height: 0">
                           <img class="headshot" src="/images/headshot.jpg" alt="headshot" width="240" height="300">
                         </td>
                       </tr>
                     </table>
                     <table cellpadding="0" cellspacing="0" border="0" class="content-right">
                       <tr>
-                        <td bgcolor="#20bcb8" height="300" style="padding: 0 40px">
+                        <td class="headshot-message-wrapper" bgcolor="#20bcb8" height="300" style="padding: 0 40px">
                           <h1 class="headshot-message" style="color:#ffffff !important; font-family: Helvetica, Arial, sans-serif; font-weight: 300">
                             [FIRST NAME], get your face out there for a great price!
                           </h1>
@@ -335,7 +351,7 @@
 
   <!-- Main content module-->
   <!-- Container Table -->
-  <table cellpadding="0" cellspacing="0" border="0" width="100%" style="table-layout: fiex" class="container-table">
+  <table cellpadding="0" cellspacing="0" border="0" width="100%" style="table-layout: fiex" class="main-content container-table">
     <tr>
       <td>
         <!-- Wrapper table -->
@@ -343,9 +359,32 @@
           <tr>
             <td>
               <!-- Content table -->
-              <table cellpadding="0" cellspacing="0" border="0" width="100%" style="table-layout: fiex" class="content-table">
+              <table cellpadding="0" cellspacing="0" border="0" width="100%" class="content-table">
                 <tr>
-                  <td></td>
+                  <td bgcolor="#ffffff" style="padding: 55px 20px;">
+                    <table align="left" cellpadding="0" cellspacing="0" border="0" width="47%" class="content-left">
+                      <tr>
+                        <td>
+                          <p class="intro" style="font-size: 17px; line-height: 23px; font-weight: 700">As a valued REIWA member, we have an exciting opportunity for you to create your own bespoke AdShel ad at a hugely discounted rate – over 45% off the standard rate.</p>
+                          <img src="/images/stock.jpg" alt="bus stop" style="display: block" width="100%">
+                        </td>
+                      </tr>
+                    </table>
+                    <table align="right" cellpadding="0" cellspacing="0" border="0" width="47%" class="content-right">
+                      <tr>
+                        <td>
+                          <p>An Adshel outdoor poster will allow you to connect and engage with potential clients where they commute, shop, live and work. </p>
+                          <ul style="padding-left: 20px">
+                            <li>Advertise in one of the most effective mediums at a massively-reduced 45% discount</li>
+                            <li>‘Own’ your local suburb</li>
+                            <li>Reach the right people in your area</li>
+                          </ul>
+                          <p>To make it even easier to get your name and face out there, we’ve created a simple and eye-catching template you’ll need to use. All you have to do is reply to this email at info@reiwa.com.au and let us know you’re interested. We’ll then get in touch with you to confirm all the details and pricing.</p>
+                          <p>We can’t wait for you to get started!From the reiwa.com Marketing Team</p>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
                 </tr>
               </table>
             </td>
@@ -368,17 +407,17 @@
               <!-- Content table -->
               <table cellpadding="0" cellspacing="0" border="0" width="100%" class="content-table">
                 <tr>
-                  <td class="footer-content-wrapper" style="padding:0 75px" height="130">
+                  <td class="footer-content-wrapper" style="padding:30px 75px" height="130">
                    <table align="right" cellpadding="0" cellspacing="0" border="0" width="47%" class="content-right">
                       <tr>
-                        <td class="footer-logo-wrapper" bgcolor="#404041" align="right">
+                        <td class="footer-logo-wrapper" bgcolor="#404041" align="right" height="65">
                           <img src="/images/logo.png" alt="footer logo">
                         </td>
                       </tr>
                     </table>
                     <table align="left" cellpadding="0" cellspacing="0" border="0" width="47%" class="content-left">
                       <tr>
-                        <td bgcolor="#404041" style="color:#ffffff">
+                        <td bgcolor="#404041" style="color:#ffffff" height="65">
                           <span style="font-size:12px; line-height:17px">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est, delectus?</span>
                         </td>
                       </tr>
