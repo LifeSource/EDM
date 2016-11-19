@@ -238,6 +238,15 @@
         width: 100% !important;
         height: auto !important;
       }
+
+      .footer-content-wrapper {
+        padding: 0 20px !important;
+      }
+
+      .footer-logo-wrapper {
+        text-align: center;
+        padding: 20px 0;
+      }
     }
   </style>
 
@@ -292,7 +301,7 @@
         <!-- Wrapper table -->
         <table cellpadding="0" cellspacing="0" border="0" width="800" class="wrapper-table">
           <tr>
-            <td height="300">
+            <td>
               <!-- Content table -->
               <table cellpadding="0" cellspacing="0" border="0" width="100%" style="table-layout: fiex" class="content-table">
                 <tr>
@@ -307,7 +316,9 @@
                     <table cellpadding="0" cellspacing="0" border="0" class="content-right">
                       <tr>
                         <td bgcolor="#20bcb8" height="300" style="padding: 0 40px">
-                          <h1 class="headshot-message" style="color:#ffffff !important">[FIRST NAME], get your face out there for a great price</h1>
+                          <h1 class="headshot-message" style="color:#ffffff !important; font-family: Helvetica, Arial, sans-serif; font-weight: 300">
+                            [FIRST NAME], get your face out there for a great price!
+                          </h1>
                         </td>
                       </tr>
                     </table>
@@ -347,17 +358,32 @@
 
   <!-- Footer content module-->
   <!-- Container Table -->
-  <table cellpadding="0" cellspacing="0" border="0" width="100%" style="table-layout: fiex" class="container-table">
+  <table cellpadding="0" cellspacing="0" border="0" width="100%" style="table-layout: fiex" class="footer container-table">
     <tr>
       <td>
         <!-- Wrapper table -->
         <table cellpadding="0" cellspacing="0" border="0" width="800" class="wrapper-table">
           <tr>
-            <td>
+            <td bgcolor="#404041">
               <!-- Content table -->
-              <table cellpadding="0" cellspacing="0" border="0" width="100%" style="table-layout: fiex" class="content-table">
+              <table cellpadding="0" cellspacing="0" border="0" width="100%" class="content-table">
                 <tr>
-                  <td></td>
+                  <td class="footer-content-wrapper" style="padding:0 75px" height="130">
+                   <table align="right" cellpadding="0" cellspacing="0" border="0" width="47%" class="content-right">
+                      <tr>
+                        <td class="footer-logo-wrapper" bgcolor="#404041" align="right">
+                          <img src="/images/logo.png" alt="footer logo">
+                        </td>
+                      </tr>
+                    </table>
+                    <table align="left" cellpadding="0" cellspacing="0" border="0" width="47%" class="content-left">
+                      <tr>
+                        <td bgcolor="#404041" style="color:#ffffff">
+                          <span style="font-size:12px; line-height:17px">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est, delectus?</span>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
                 </tr>
               </table>
             </td>
