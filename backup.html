@@ -1,100 +1,372 @@
-      <tr>
-        <td valign="top">
-          <!-- Tables are the most common way to format your email consistently. Set your table widths inside cells and in most cases reset cellpadding, cellspacing, and border to zero. Use nested tables as a way to space effectively in your message. -->
-          <table class="inner-table" cellpadding="0" cellspacing="0" border="0" align="center">
-            <tbody>
-              <tr><td class="top-gutter"></td></tr>
-              <tr>
-                <td>
-                  <table class="header-table">
-                    <tbody>
-                      <tr>
-                        <td class="vertical-gutter"></td>
-                        <td class="header-tagline">
-                          Can't view this email?
-                          <br/>
-                          <a href="#" class="links">View online.</a>
-                        </td>
-                        <td class="header-logo">
-                          <img src="images/logo.png" alt="Reiwa logo" />
-                        </td>
-                        <td class="vertical-gutter"></td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </td>
-              </tr>
-              <tr><td class="top-gutter"></td></tr>
-              <!-- Main Content -->
-              <tr>
-                <td>
-                  <table class="headshot-table" cellpadding="0" cellspacing="0" border="0" align="center">
-                    <tbody>
-                      <tr>
-                        <td class="headshot inner-cell" cellpadding="0" colspan="0">
-                          <img src="images/headshot.jpg" alt="headshot" class="headshot" />
-                        </td>
-                        <td class="tagline-gutter"></td>
-                        <td class="profile-intro inner-cell">
-                          <h1>[First Name], get your face out there for a great price!</h1>
-                        </td>
-                        <td class="tagline-gutter"></td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </td>
-              </tr>
-              <!-- Main body content -->
-              <tr>
-                <td valign="top">
-                  <table class="main-content-table">
-                    <tbody>
-                      <tr>
-                        <td class="content-cell">
-                          <tr>
-                            <td class="inner-cell inner-left">
-                              <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus ab quaerat earum blanditiis veniam consectetur aut, odit maiores voluptate enim tenetur nulla, quos accusamus, quasi quod dolores. Veritatis, ratione, provident.
-                              </h3>
-                              <div class="image-wrapper" style="text-align:center" >
-                                <img src="images/headshot.jpg" alt="headshot" class="headshot" align="center" />
-                              </div>
-                            </td>
-                            <td valign="top" class="inner-cell inner-right">Right side</td>
-                          </tr>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </td>
-              </tr>
-              <!-- Footer -->
-              <tr>
-                <td class="footer-gutter"></td>
-              </tr>
-              <tr>
-                <td>
-                  <table class="footer-table" cellpadding="0" cellspacing="0" border="0" align="center">
-                    <tbody>
-                      <tr>
-                        <td class="vertical-gutter"></td>
-                        <td class="footer-tagline">
-                          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita iusto dolores facilis.
-                        </td>
-                        <td class="vertical-gutter"></td>
-                        <td class="footer-logo">
-                          <img src="images/logo.png" alt="Reiwa logo" />
-                        </td>
-                        <td class="vertical-gutter"></td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </td>
-              </tr>
-              <tr>
-                <td class="footer-gutter"></td>
-              </tr>
-            </tbody>
+<!--<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">-->
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Message Subject or Title</title>
+  <style type="text/css">
+    /* Based on The MailChimp Reset INLINE: Yes. */
+    /* Client-specific Styles */
+
+    #outlook a {
+      padding: 0;
+    }
+    /* Force Outlook to provide a "view in browser" menu link. */
+
+    body {
+      width: 100% !important;
+      -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+      margin: 0;
+      padding: 0;
+    }
+    /* Prevent Webkit and Windows Mobile platforms from changing default font sizes.*/
+
+    .ExternalClass {
+      width: 100%;
+    }
+    /* Force Hotmail to display emails at full width */
+
+    .ExternalClass,
+    .ExternalClass p,
+    .ExternalClass span,
+    .ExternalClass font,
+    .ExternalClass td,
+    .ExternalClass div {
+      line-height: 100%;
+    }
+    /* Forces Hotmail to display normal line spacing.  More on that: http://www.emailonacid.com/forum/viewthread/43/ */
+
+    #backgroundTable {
+      margin: 0;
+      padding: 0;
+      width: 100% !important;
+      line-height: 100% !important;
+    }
+    /* End reset */
+    /* Some sensible defaults for images
+		Bring inline: Yes. */
+
+    img {
+      outline: none;
+      text-decoration: none;
+      -ms-interpolation-mode: bicubic;
+    }
+
+    a img {
+      border: none;
+    }
+
+    .image_fix {
+      display: block;
+    }
+    /* Yahoo paragraph fix
+		Bring inline: Yes. */
+
+    p {
+      margin: 1em 0;
+    }
+    /* Hotmail header color reset
+		Bring inline: Yes. */
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      color: black !important;
+    }
+
+    h1 a,
+    h2 a,
+    h3 a,
+    h4 a,
+    h5 a,
+    h6 a {
+      color: blue !important;
+    }
+
+    h1 a:active,
+    h2 a:active,
+    h3 a:active,
+    h4 a:active,
+    h5 a:active,
+    h6 a:active {
+      color: red !important;
+      /* Preferably not the same color as the normal header link color.  There is limited support for psuedo classes in email clients, this was added just for good measure. */
+    }
+
+    h1 a:visited,
+    h2 a:visited,
+    h3 a:visited,
+    h4 a:visited,
+    h5 a:visited,
+    h6 a:visited {
+      color: purple !important;
+      /* Preferably not the same color as the normal header link color. There is limited support for psuedo classes in email clients, this was added just for good measure. */
+    }
+    /* Outlook 07, 10 Padding issue fix
+		Bring inline: No.*/
+
+    table td {
+      border-collapse: collapse;
+    }
+    /* Remove spacing around Outlook 07, 10 tables
+		Bring inline: Yes */
+
+    table {
+      border-collapse: collapse;
+      mso-table-lspace: 0pt;
+      mso-table-rspace: 0pt;
+    }
+    /* Styling your links has become much simpler with the new Yahoo.  In fact, it falls in line with the main credo of styling in email and make sure to bring your styles inline.  Your link colors will be uniform across clients when brought inline.
+		Bring inline: Yes. */
+
+    a {
+      color: orange;
+    }
+    /***************************************************
+		****************************************************
+		MOBILE TARGETING
+		****************************************************
+		***************************************************/
+
+    @media only screen and (max-device-width: 480px) {
+      /* Part one of controlling phone number linking for mobile. */
+      a[href^="tel"],
+      a[href^="sms"] {
+        text-decoration: none;
+        color: blue;
+        /* or whatever your want */
+        pointer-events: none;
+        cursor: default;
+      }
+      .mobile_link a[href^="tel"],
+      .mobile_link a[href^="sms"] {
+        text-decoration: default;
+        color: orange !important;
+        pointer-events: auto;
+        cursor: default;
+      }
+    }
+    /* More Specific Targeting */
+
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+      /* You guessed it, ipad (tablets, smaller screens, etc) */
+      /* repeating for the ipad */
+      a[href^="tel"],
+      a[href^="sms"] {
+        text-decoration: none;
+        color: blue;
+        /* or whatever your want */
+        pointer-events: none;
+        cursor: default;
+      }
+      .mobile_link a[href^="tel"],
+      .mobile_link a[href^="sms"] {
+        text-decoration: default;
+        color: orange !important;
+        pointer-events: auto;
+        cursor: default;
+      }
+    }
+
+    @media only screen and (-webkit-min-device-pixel-ratio: 2) {
+      /* Put your iPhone 4g styles in here */
+    }
+    /* Android targeting */
+
+    @media only screen and (-webkit-device-pixel-ratio:.75) {
+      /* Put CSS for low density (ldpi) Android layouts in here */
+    }
+
+    @media only screen and (-webkit-device-pixel-ratio:1) {
+      /* Put CSS for medium density (mdpi) Android layouts in here */
+    }
+
+    @media only screen and (-webkit-device-pixel-ratio:1.5) {
+      /* Put CSS for high density (hdpi) Android layouts in here */
+    }
+    /* end Android targeting */
+  </style>
+
+  <!-- Targeting Windows Mobile -->
+  <!--[if IEMobile 7]>
+	<style type="text/css">
+
+	</style>
+	<![endif]-->
+
+  <!-- ***********************************************
+	****************************************************
+	END MOBILE TARGETING
+	****************************************************
+	************************************************ -->
+
+  <!--[if gte mso 9]>
+		<style>
+		/* Target Outlook 2007 and 2010 */
+		</style>
+	<![endif]-->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- Wrapper/Container Table: Use a wrapper table to control the width and the background color consistently of your email. Use this approach instead of setting attributes on the body tag. -->
+  <table cellpadding="0" cellspacing="0" border="0" class="wrapper-table">
+    <tr>
+      <td>
+        <table class="table main-table" align="center" cellpadding="0" cellspacing="0" border="0">
+          <tr>
+            <td class="horizontal-header-gutter"></td>
+          </tr>
+          <tr>
+            <td class="header-row">
+              <table class="table header-contact-table">
+
+                <tr>
+                  <td class="vertical-header-gutter"></td>
+                  <td class="tagline" valign="center">
+                    <div>Can&rsquo;t view this email?</div>
+                    <a href="#">View online.</a>
+                  </td>
+                </tr>
+
+              </table>
+              <table class="table header-logo-table">
+
+                <tr>
+                  <td>
+                    <img src="images/logo.png" alt="Reiwa logo">
+                  </td>
+                  <td class="vertical-header-gutter"></td>
+                </tr>
+
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td class="horizontal-header-gutter"></td>
+          </tr>
+          <!-- Main headshot area -->
+          <tr class="headshot-wrapper-row">
+            <td>
+              <table class="headshot-table" cellpadding="0" cellspacing="0" border="0">
+
+                <tr>
+                  <td class="headshot-image-wrapper">
+                    <img src="/images/headshot.jpg" alt="headshot image">
+                  </td>
+                </tr>
+
+              </table>
+              <table class="headshot-message-table" valign="center" cellpadding="0" cellspacing="0" border="0">
+
+                <tr>
+                  <td class="headshot-message-gutter"></td>
+                  <td class="headshot-message-wrapper">
+                    <h1 class="headshot-message">
+                      [FIRST NAME], get your face out there for a great price!
+                    </h1>
+                  </td>
+                  <td class="headshot-message-gutter"></td>
+                </tr>
+
+              </table>
+            </td>
+          </tr>
+          <!-- End headshot area -->
+
+          <!-- Main content area -->
+          <tr>
+            <td class="main-content-horizontal-gutter"></td>
+          </tr>
+          <tr class="main-content-row">
+            <td>
+              <table class="table main-content-table-left" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                  <td class="main-content-vertical-gutter"></td>
+                  <td>
+                    <h3>As a valued REIWA member,we have an exciting opportunityfor you to create your own bespoke AdShel ad
+                      at a hugely discounted rate – over 45% off the standard rate.</h3>
+                    <br/>
+                    <br/>
+                    <img src="/images/headshot.jpg" alt="" width="240px">
+                  </td>
+                  <td class="main-content-vertical-gutter"></td>
+                </tr>
+              </table>
+              <table class="table main-content-table-right" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                  <td class="main-content-vertical-gutter"></td>
+                  <td>
+                    <p>An Adshel outdoor poster will allow you to connect and engage with potential clients where they commute,
+                      shop, live and work.</p>
+                    <ul>
+                      <li>Advertise in one of the most effective mediums at a massively-reduced 45% discount</li>
+                      <li>‘Own’ your local suburb</li>
+                      <li> Reach the right people in your area</li>
+                    </ul>
+                    <p>
+                      To make it even easier to get your name and face out there, we’ve created a simple and eye-catching template you’ll need
+                      to use. All you have to do is reply to this email at info@reiwa.com.au and let us know you’re interested.
+                    </p>
+                    <br/>
+                    <p> We’ll then get in touch with you to confirm all the details and pricing. We can’t wait for you to get
+                      started!From the reiwa.com Marketing Team
+                    </p>
+                  </td>
+                  <td class="main-content-vertical-gutter"></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td class="main-content-horizontal-gutter"></td>
+          </tr>
+          <!-- End main content area -->
+
+          <!-- footer area -->
+          <tr>
+            <td class="horizontal-footer-gutter"></td>
+          </tr>
+          <tr class="footer-row">
+            <td>
+              <table class="table footer-contact-table" cellpadding="0" cellspacing="0" border="0">
+
+                <tr>
+                  <td class="vertical-footer-gutter"></td>
+                  <td class="tagline">
+                    <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, recusandae.</span>
+                  </td>
+                  <td class="vertical-footer-gutter"></td>
+                </tr>
+
+              </table>
+              <table class="table footer-logo-table" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                  <td class="vertical-footer-gutter"></td>
+                  <td>
+                    <img src="images/logo.png" alt="Reiwa logo">
+                  </td>
+                  <td class="vertical-footer-gutter"></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td class="horizontal-footer-gutter"></td>
+          </tr>
+          <!-- End of footer area>
+
           </table>
-          <!-- End example table -->
         </td>
       </tr>
+  </table>
+  <!-- End of wrapper table -->
+</body>
+
+</html>

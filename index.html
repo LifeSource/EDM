@@ -1,11 +1,10 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
-
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Your Message Subject or Title</title>
-  <style type="text/css">
+    <style type="text/css">
     /* Based on The MailChimp Reset INLINE: Yes. */
     /* Client-specific Styles */
 
@@ -210,169 +209,163 @@
 		/* Target Outlook 2007 and 2010 */
 		</style>
 	<![endif]-->
+
+  <style type="text/css">
+    /*
+      Primary: #00afec
+      Secondary: #20bcb8
+    */
+    body {
+      font-family: Helvetica, Arial, sans-serif !important;
+    }
+    h1 {
+      margin: 0 !important;
+      padding: 0 !important;
+    }
+
+    .headshot-message {
+      color: #ffffff !important;
+    }
+
+    @media screen and (max-width: 768px) {
+      .wrapper-table {
+        width: 100% !important;
+      }
+    }
+
+    @media screen and (max-width: 480px) {
+      .headshot {
+        width: 100% !important;
+        height: auto !important;
+      }
+    }
+  </style>
+
   <link rel="stylesheet" href="style.css" />
 </head>
-
-<body>
-  <!-- Wrapper/Container Table: Use a wrapper table to control the width and the background color consistently of your email. Use this approach instead of setting attributes on the body tag. -->
-  <table cellpadding="0" cellspacing="0" border="0" class="wrapper-table">
-    <tbody>
-      <tr>
-        <td>
-          <table class="table main-table" align="center" cellpadding="0" cellspacing="0" border="0" >
-            <tbody>
-              <tr>
-                <td class="horizontal-header-gutter"></td>
-              </tr>
-              <tr>
-                <td class="header-row">
-                  <table class="table header-contact-table">
-                    <tbody>
-                      <tr>
-                        <td class="vertical-header-gutter"></td>
-                        <td class="tagline" valign="center">
-                          <div>Can&rsquo;t view this email?</div>
-                          <a href="#">View online.</a>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                  <table class="table header-logo-table">
-                    <tbody>
-                      <tr>
-                        <td>
-                          <img src="images/logo.png" alt="Reiwa logo">
-                        </td>
-                        <td class="vertical-header-gutter"></td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </td>
-              </tr>
-              <tr>
-                <td class="horizontal-header-gutter"></td>
-              </tr>
-              <!-- Main headshot area -->
-              <tr class="headshot-wrapper-row">
-                <td>
-                  <table class="headshot-table" cellpadding="0" cellspacing="0" border="0">
-                    <tbody>
-                      <tr>
-                        <td class="headshot-image-wrapper">
-                          <img src="/images/headshot.jpg" alt="headshot image">
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                  <table class="headshot-message-table" valign="center" cellpadding="0" cellspacing="0" border="0">
-                    <tbody>
-                      <tr>
-                        <td class="headshot-message-gutter"></td>
-                        <td class="headshot-message-wrapper">
-                          <h1 class="headshot-message">
-                            [FIRST NAME], get your face out there for a great price!
-                          </h1>
-                        </td>
-                        <td class="headshot-message-gutter"></td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </td>
-              </tr>
-              <!-- End headshot area -->
-
-              <!-- Main content area -->
-              <tr>
-                <td class="main-content-horizontal-gutter"></td>
-              </tr>
-              <tr class="main-content-row">
-                <td>
-                  <table class="table main-content-table-left" cellpadding="0" cellspacing="0" border="0">
-                    <tbody>
-                      <tr>
-                        <td class="main-content-vertical-gutter"></td>
-                        <td>
-                         <h3>As a valued REIWA member,we have an exciting opportunityfor you to create your own bespoke AdShel ad at a hugely discounted rate – over 45% off the standard rate.</h3>
-                         <br/>
-                         <br/>
-                         <img src="/images/headshot.jpg" alt="" width="240px">
-                        </td>
-                        <td class="main-content-vertical-gutter"></td>
-                      </tr>
-                    </tbody>
-                  </table>
-                  <table class="table main-content-table-right" cellpadding="0" cellspacing="0" border="0">
-                    <tbody>
-                      <tr>
-                        <td class="main-content-vertical-gutter"></td>
-                        <td>
-                          <p>An Adshel outdoor poster will allow you to connect and engage with potential clients where they commute, shop, live and work.</p>
-                          <ul>
-                            <li>Advertise in one of the most effective mediums at a massively-reduced 45% discount</li>
-                            <li>‘Own’ your local suburb</li>
-                            <li> Reach the right people in your area</li>
-                          </ul>
-                          <p>
-                            To make it even easier to get your name and face out there, we’ve created a simple and eye-catching template you’ll need to use. All you have to do is reply to this email at info@reiwa.com.au and let us know you’re interested.
-                          </p>
-                          <br/>
-                          <p> We’ll then get in touch with you to confirm all the details and pricing.
-We can’t wait for you to get started!From the reiwa.com Marketing Team
-                          </p>
-                          </td>
-                        <td class="main-content-vertical-gutter"></td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </td>
-              </tr>
-              <tr>
-                <td class="main-content-horizontal-gutter"></td>
-              </tr>
-              <!-- End main content area -->
-
-              <!-- footer area -->
+<body style="margin: 0; padding: 0">
+  <!-- Header module -->
+  <!-- Container Table -->
+  <table cellpadding="0" cellspacing="0" border="0" width="100%" style="table-layout: fiex" class="header container-table">
+    <tr>
+      <td>
+        <!-- Wrapper table -->
+        <table cellpadding="0" cellspacing="0" border="0" width="800" class="wrapper-table" bgcolor="#404041">
+          <tr>
+            <td>
+              <!-- Content table -->
+              <table cellpadding="0" cellspacing="0" border="0" width="100%" class="content-table">
                 <tr>
-                  <td class="horizontal-footer-gutter"></td>
-                </tr>
-                <tr class="footer-row">
-                  <td>
-                    <table class="table footer-contact-table" cellpadding="0" cellspacing="0" border="0">
-                      <tbody>
-                        <tr>
-                          <td class="vertical-footer-gutter"></td>
-                          <td class="tagline">
-                            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, recusandae.</span>
-                          </td>
-                          <td class="vertical-footer-gutter"></td>
-                        </tr>
-                      </tbody>
+                  <td style="padding:0 25px; color: #ffffff" cellpadding="0" cellspacing="0" border="0">
+                    <table align="left" cellpadding="0" cellspacing="0" border="0" class="content-left" width="47%">
+                      <tr>
+                        <td style="font-size: 12px; font-weight: 100; line-height: 14px" height="65">
+                          <span>Can't view this email?</span>
+                          <br>
+                          <a href="#" style="color:#00afec; text-decoration: none; font-weight: 100">View online.</a>
+                        </td>
+                      </tr>
                     </table>
-                    <table class="table footer-logo-table" cellpadding="0" cellspacing="0" border="0">
-                      <tbody>
-                        <tr>
-                          <td class="vertical-footer-gutter"></td>
-                          <td>
-                            <img src="images/logo.png" alt="Reiwa logo">
-                          </td>
-                          <td class="vertical-footer-gutter"></td>
-                        </tr>
-                      </tbody>
+                    <table align="right" cellpadding="0" cellspacing="0" border="0" class="content-right" width="47%">
+                      <tr>
+                        <td style="text-align: right" height="65">
+                          <img src="/images/logo.png" alt="logo" width="133" style="font-size: 0; line-height: 0; text-align: right">
+                        </td>
+                      </tr>
                     </table>
                   </td>
                 </tr>
-                <tr>
-                  <td class="horizontal-footer-gutter"></td>
-                </tr>
-              <!-- End of footer area>
-            </tbody>
-          </table>
-        </td>
-      </tr>
-
-    </tbody>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
   </table>
-  <!-- End of wrapper table -->
-</body>
+  <!-- End header module -->
 
+  <!-- Promo module -->
+  <!-- Container Table -->
+  <table cellpadding="0" cellspacing="0" border="0" width="100%" style="table-layout: fiex" class="container-table">
+    <tr>
+      <td>
+        <!-- Wrapper table -->
+        <table cellpadding="0" cellspacing="0" border="0" width="800" class="wrapper-table">
+          <tr>
+            <td height="300">
+              <!-- Content table -->
+              <table cellpadding="0" cellspacing="0" border="0" width="100%" style="table-layout: fiex" class="content-table">
+                <tr>
+                  <td>
+                    <table align="left" cellpadding="0" cellspacing="0" border="0" class="content-left">
+                      <tr>
+                        <td height="300" style="font-size: 0;line-height: 0">
+                          <img class="headshot" src="/images/headshot.jpg" alt="headshot" width="240" height="300">
+                        </td>
+                      </tr>
+                    </table>
+                    <table cellpadding="0" cellspacing="0" border="0" class="content-right">
+                      <tr>
+                        <td bgcolor="#20bcb8" height="300" style="padding: 0 40px">
+                          <h1 class="headshot-message" style="color:#ffffff !important">[FIRST NAME], get your face out there for a great price</h1>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+  <!-- End promo module -->
+
+  <!-- Main content module-->
+  <!-- Container Table -->
+  <table cellpadding="0" cellspacing="0" border="0" width="100%" style="table-layout: fiex" class="container-table">
+    <tr>
+      <td>
+        <!-- Wrapper table -->
+        <table cellpadding="0" cellspacing="0" border="0" width="800" class="wrapper-table">
+          <tr>
+            <td>
+              <!-- Content table -->
+              <table cellpadding="0" cellspacing="0" border="0" width="100%" style="table-layout: fiex" class="content-table">
+                <tr>
+                  <td></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+  <!-- End main content module -->
+
+  <!-- Footer content module-->
+  <!-- Container Table -->
+  <table cellpadding="0" cellspacing="0" border="0" width="100%" style="table-layout: fiex" class="container-table">
+    <tr>
+      <td>
+        <!-- Wrapper table -->
+        <table cellpadding="0" cellspacing="0" border="0" width="800" class="wrapper-table">
+          <tr>
+            <td>
+              <!-- Content table -->
+              <table cellpadding="0" cellspacing="0" border="0" width="100%" style="table-layout: fiex" class="content-table">
+                <tr>
+                  <td></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+  <!-- End footer content module -->
+</body>
 </html>
